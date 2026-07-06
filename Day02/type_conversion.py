@@ -1,0 +1,11 @@
+#type check : checks which data belongs to which data type
+print(type(True))
+print(type("Hello"))
+print(type(12345))
+print(type(3.1459))
+print(int("123")+int("456"))
+int()
+float()
+str()
+bool()
+print(str("Number of letters in your name: ")+str(len(input("what is your name?:"))))
