@@ -21,11 +21,13 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 *******************************************************************************
 ''')
 print("Welcome to Treasure Island!\nYour mission is to find the hidden treasure.")
-direction_choice = input('You\'re at a crossroad. Where do you want to go? Type Left or Right: ')
-if direction_choice == "Left":
-    wait_go = input("You came across a lake, do you want to wait for boat or swim across the lake? Type boat or swim: ")
+direction_choice = input('You\'re at a crossroad. Where do you want to go? Type Left or Right: ').lower()
+if direction_choice == "left":
+    wait_go = input("You came across a lake, do you want to wait for boat or swim across the lake? " \
+    "Type boat or swim: ").lower()
     if wait_go == "boat":
-        door_choice = input("Congratulations ! You came to the treasure island unharmed. Choose a door between Red, Blue or Yellow: ")
+        door_choice = input("Congratulations ! You came to the treasure island unharmed. " \
+        "Choose a door between Red, Blue or Yellow: ").lower()
         if door_choice == "Blue":
             print("You are dead. You were eaten by the flying beasts!")
         elif door_choice == "Yellow":

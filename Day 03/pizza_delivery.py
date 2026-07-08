@@ -7,36 +7,36 @@ print("Medimum Pizza     : ₹120")
 print("Large Pizza       : ₹180")
 print("Coke              : ₹50")
 customer_name = input("What is your name?: ")
-size = input("What size of pizza do you want? Small:S , medium:M, or large:L ? ")
-pepperoni = input("Do you want pepperoni on you pizza? (Y/N): ")
-cheese = input("Do you want extra cheese? (Y/N): ")
-coke = input("Do you want a can of coke? (Y/N): ")
+size = input("What size of pizza do you want? Small:S , medium:M, or large:L ? ").lower()
+pepperoni = input("Do you want pepperoni on you pizza? (Y/N): ").lower()
+cheese = input("Do you want extra cheese? (Y/N): ").lower()
+coke = input("Do you want a can of coke? (Y/N): ").lower()
 small_pizza = 80
 medium_pizza = 120
 large_pizza = 180
 coke_price = 50
-if size == "S":
+if size == "s":
     bill = 80
     pizza_size = "Small"
-    if pepperoni == "Y":
+    if pepperoni == "y":
         bill += 10
-    if cheese == "Y":
+    if cheese == "y":
         bill += 10
-elif size == "M":
+elif size == "m":
     bill = 120
     pizza_size = "Medium"
-    if pepperoni == "Y":
+    if pepperoni == "y":
         bill += 20
-    if cheese == "Y":
+    if cheese == "y":
         bill += 10
-elif size == "L":
+elif size == "l":
     bill = 180
     pizza_size = "Large"
-    if pepperoni == "Y":
+    if pepperoni == "y":
         bill += 20
-    if cheese == "Y":
+    if cheese == "y":
         bill += 10
-if coke == "Y":
+if coke == "y":
     bill += 50
 else:
     print("You haven't ordered anything !") 
