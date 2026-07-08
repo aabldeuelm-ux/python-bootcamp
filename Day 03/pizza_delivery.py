@@ -1,0 +1,49 @@
+print("=============================================")
+print("     Welcome to Python Pizza Deliveries!     ")
+print("=============================================")
+print("\n         MENU")
+print("\nSmall Pizza       : ₹80")
+print("Medimum Pizza     : ₹120")
+print("Large Pizza       : ₹180")
+print("Coke              : ₹50")
+customer_name = input("What is your name?: ")
+size = input("What size of pizza do you want? Small:S , medium:M, or large:L ? ")
+pepperoni = input("Do you want pepperoni on you pizza? (Y/N): ")
+cheese = input("Do you want extra cheese? (Y/N): ")
+coke = input("Do you want a can of coke? (Y/N): ")
+small_pizza = 80
+medium_pizza = 120
+large_pizza = 180
+coke_price = 50
+if size == "S":
+    bill = 80
+    pizza_size = "Small"
+    if pepperoni == "Y":
+        bill += 20
+    if cheese == "Y":
+        bill += 10
+elif size == "M":
+    bill = 120
+    pizza_size = "Medium"
+    if pepperoni == "Y":
+        bill += 20
+    if cheese == "Y":
+        bill += 10
+elif size == "L":
+    bill = 180
+    pizza_size = "Large"
+    if pepperoni == "Y":
+        bill += 20
+    if cheese == "Y":
+        bill += 10
+if coke == "Y":
+    bill += 50
+else:
+    print("You haven't ordered anything !") 
+
+print("==============================")
+print("         PYTHON CAFE          ")
+print("==============================")
+print(f"\nCustomer: {customer_name}")
+print(f"\nPizza Size - ₹{pizza_size} ")
+print(f"Your final bill is: {bill}")
