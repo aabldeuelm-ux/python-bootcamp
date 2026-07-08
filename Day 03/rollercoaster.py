@@ -40,6 +40,3 @@ if height >= 120:
     print(f"Your Total bill is ₹{bill}")
 else:
     print("Shawtyyyy!")
-
-# if age >= 45 and age <= 55:
-#     print("You can ride for free")

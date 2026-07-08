@@ -14,7 +14,7 @@ if withdrawal_amt <= previous_balance:
     remaining_balance = (previous_balance - withdrawal_amt)
     print(f"Remaining Balance  : ₹{round(remaining_balance, 2)}")
     print("\nTransaction Status : SUCCESS ")
-    print("Thankyou for theivery with us!")
+    print("\nThankyou for theivery with us!")
 else:
     print("Withdrawal amount is greater than the current balance in your account ")
     print("\nTransaction Status : FAILED")

@@ -19,7 +19,7 @@ if size == "S":
     bill = 80
     pizza_size = "Small"
     if pepperoni == "Y":
-        bill += 20
+        bill += 10
     if cheese == "Y":
         bill += 10
 elif size == "M":
