@@ -263,3 +263,303 @@ Useful when one decision depends on another.
 ## Biggest Lesson
 
 Write code that is easy to read before trying to make it clever.
+
+# Mission 1 – Day 4
+
+## Topics Learned
+
+- Random Module
+- Lists
+- List Indexing
+- Parallel Lists
+- Importing Modules
+- Random Choice
+- Random Integer
+
+---
+
+## Random Module
+
+Used to generate random numbers and make random selections.
+
+Functions learned:
+
+random.randint()
+
+Returns a random integer within a given range.
+
+Example:
+
+random.randint(1, 10)
+
+---
+
+random.choice()
+
+Randomly selects one item from a list.
+
+Example:
+
+random.choice(fruits)
+
+---
+
+## Lists
+
+A list stores multiple values in a single variable.
+
+Example:
+
+fruits = ["Apple", "Banana", "Orange"]
+
+Lists are ordered and can be modified.
+
+---
+
+## List Indexing
+
+Python lists start from index 0.
+
+Example:
+
+fruits = ["Apple", "Banana", "Orange"]
+
+fruits[0] → Apple
+fruits[1] → Banana
+fruits[2] → Orange
+
+Last element:
+
+fruits[len(fruits) - 1]
+
+---
+
+## Parallel Lists
+
+Two or more lists can work together using the same index.
+
+Example:
+
+movies = ["Superman", "F1"]
+prices = [250, 300]
+
+movies[0] → Superman
+prices[0] → 250
+
+The same index refers to related information.
+
+---
+
+## Things I Learned
+
+- Lists allow storing multiple related values.
+- Indexes start from 0.
+- User input often needs to be converted to a list index.
+- Always validate indexes before accessing a list.
+- random.choice() is useful for selecting random items from a list.
+- random.randint() generates random numbers within a range.
+- Variables should be initialized before use to avoid errors.
+- Input validation prevents programs from crashing.
+- Build and test programs one step at a time.
+
+---
+
+## Programs Built
+
+- Heads or Tails
+- Banker Roulette
+- Treasure Map
+- Rock Paper Scissors
+- Lucky Draw System (Challenge)
+- Python Cinema Booking System (Challenge)
+
+---
+
+## Biggest Lesson
+
+A good program doesn't just produce the correct result—it also handles invalid input gracefully and presents the output in a clear, user-friendly way.
+
+
+# Mission 1 – Day 5
+
+## Topics Learned
+
+- For Loops
+- range() Function
+- Looping Through Lists
+- Modulus Operator in Loops
+- Nested Loops
+- String Joining
+- List Shuffling
+
+---
+
+## For Loops
+
+A for loop is used to repeat a block of code for every item in a sequence.
+
+Example:
+
+for fruit in fruits:
+    print(fruit)
+
+---
+
+## range()
+
+The range() function generates a sequence of numbers.
+
+Examples:
+
+range(1, 6)
+
+Produces:
+
+1 2 3 4 5
+
+The ending value is not included.
+
+Step values can also be used.
+
+Example:
+
+range(2, 11, 2)
+
+Produces:
+
+2 4 6 8 10
+
+---
+
+## Modulus Operator
+
+The modulus operator (%) returns the remainder after division.
+
+Examples:
+
+10 % 2 → 0
+9 % 3 → 0
+7 % 3 → 1
+
+A remainder of 0 means the number is divisible.
+
+---
+
+## Using Loops for Calculations
+
+Variables can be updated inside a loop.
+
+Example:
+
+total += number
+
+This allows calculations like:
+
+- Sum of numbers
+- Average
+- Counting items
+
+---
+
+## Nested Loops
+
+A loop can exist inside another loop.
+
+Example:
+
+for row in matrix:
+    for value in row:
+        print(value)
+
+Nested loops repeat the inner loop completely for every iteration of the outer loop.
+
+---
+
+## Lists vs Strings
+
+List
+
+- Mutable
+- Items can be added, removed and shuffled.
+
+String
+
+- Immutable
+- Cannot be modified after creation.
+
+Choose the correct data structure depending on the task.
+
+---
+
+## random.shuffle()
+
+Shuffles the elements of a list randomly.
+
+Example:
+
+random.shuffle(my_list)
+
+Important:
+
+shuffle() modifies the original list and returns None.
+
+---
+
+## "".join()
+
+Used to combine a list of strings into one string.
+
+Example:
+
+letters = ["H", "e", "l", "l", "o"]
+
+word = "".join(letters)
+
+Output:
+
+Hello
+
+The string before join() becomes the separator.
+
+Examples:
+
+" ".join(list)   → Space separated
+
+"-".join(list)   → Hyphen separated
+
+"".join(list)    → No separator
+
+---
+
+## Things I Learned
+
+- for loops repeat code efficiently.
+- range() excludes the ending number.
+- The modulus operator is useful for checking divisibility.
+- The order of if/elif conditions matters (FizzBuzz).
+- Lists are mutable while strings are immutable.
+- random.shuffle() changes a list in place.
+- Some functions modify objects while others return new values.
+- join() returns a new string and does not modify the original list.
+- Break large problems into smaller steps before solving them.
+
+---
+
+## Programs Built
+
+- Average Height Calculator
+- Highest Score Finder
+- Adding Even Numbers
+- FizzBuzz
+- PyPassword Generator (Easy Level)
+- PyPassword Generator (Hard Level)
+
+---
+
+## Biggest Lesson
+
+Understanding *why* a data structure is chosen is more important than memorizing syntax.
+
+Lists are best when data needs to be modified or shuffled.
+
+Strings are best for displaying the final result.
