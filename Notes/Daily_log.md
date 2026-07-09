@@ -1,6 +1,6 @@
 🐍 Python Boot Camp
 
-Mission 1 – Day 1 ✅
+## Mission 1 – Day 1 ✅
 
 Concepts Learned
 * print() – Display output to the console.
@@ -80,7 +80,7 @@ length = len(name)
 
 
 
-Mission 1 – Day 2 ✅
+## Mission 1 – Day 2 ✅
 📚 Concepts Learned
 1. Primitive Data Types
 str   # String (Text)
