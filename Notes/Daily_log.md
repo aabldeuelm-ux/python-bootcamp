@@ -213,9 +213,9 @@ This works for:
 
 
 
-✅ Mission 1 – Day 3
+## ✅ Mission 1 – Day 3
 
-## Topics Learned
+# Topics Learned
 
 - Control Flow
 - if statements
