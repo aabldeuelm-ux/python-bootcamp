@@ -563,3 +563,179 @@ Understanding *why* a data structure is chosen is more important than memorizing
 Lists are best when data needs to be modified or shuffled.
 
 Strings are best for displaying the final result.
+
+
+# Mission 1 – Day 6
+
+## Topics Learned
+
+- Functions
+- Function Definition
+- Function Calling
+- Code Blocks
+- Indentation
+- While Loops (Reeborg's World)
+- Problem Solving with Functions
+
+---
+
+## Functions
+
+A function is a reusable block of code that performs a specific task.
+
+Functions help avoid repeating the same code multiple times.
+
+Example:
+
+def greet():
+    print("Hello")
+
+---
+
+## Function Definition
+
+A function is defined using the `def` keyword.
+
+Syntax:
+
+def function_name():
+    # Code
+
+Defining a function only tells Python what to do.
+It does **not** execute the function.
+
+---
+
+## Function Calling
+
+A function runs only when it is called.
+
+Example:
+
+greet()
+
+Calling the function executes all the code inside it.
+
+---
+
+## Code Blocks
+
+A code block is a group of statements that belong together.
+
+Python uses indentation instead of braces `{}` to identify code blocks.
+
+Examples of code blocks:
+
+- Functions
+- if statements
+- for loops
+- while loops
+
+---
+
+## Indentation
+
+Indentation tells Python which statements belong to a block.
+
+Example:
+
+def greet():
+    print("Hello")
+    print("Welcome")
+
+print("Outside")
+
+Both print statements inside the function belong to the function because they are indented.
+
+---
+
+## While Loops
+
+A while loop repeats as long as a condition remains True.
+
+Syntax:
+
+while condition:
+    # Code
+
+Unlike a for loop, a while loop does not know beforehand how many times it will execute.
+
+---
+
+## Functions in Reeborg's World
+
+Functions were used to simplify repeated robot movements.
+
+Example:
+
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+
+Instead of writing three turn_left() calls every time, the function could be reused whenever needed.
+
+---
+
+## Things I Learned
+
+- Functions improve code readability.
+- Functions make code reusable.
+- Defining a function does not execute it.
+- A function must be called to run.
+- Indentation is essential in Python.
+- Code blocks determine which statements belong together.
+- while loops continue until their condition becomes False.
+- Large problems become easier when broken into smaller functions.
+
+---
+
+## Programs Built
+
+- Function Practice
+- Hurdle 1
+- Hurdle 2
+- Hurdle 3
+- Hurdle 4
+- Hurdle Challenge
+- Maze Challenge (Skipped Debugging Section as recommended for beginners)
+
+---
+
+## Things to Remember
+
+- `def` defines a function.
+- `function_name()` calls a function.
+- Python relies on indentation to define blocks.
+- Use functions whenever code is repeated.
+- Use a `for` loop when the number of iterations is known.
+- Use a `while` loop when repetition depends on a condition.
+- Keep functions focused on one specific task.
+
+---
+
+## Questions
+
+(Leave this section blank and add any doubts while studying.)
+
+---
+
+## Biggest Lesson
+
+Functions answer the question:
+
+**"What should happen?"**
+
+Loops answer the question:
+
+**"How many times should it happen?"**
+
+Combining functions with loops allows programs to become cleaner, reusable, and easier to maintain.
+
+---
+
+## Biggest Achievement
+
+🤖 Successfully completed all Reeborg's World hurdle challenges and understood how functions simplify repeated tasks.
+
+📝 The advanced maze debugging section was intentionally skipped based on the instructor's recommendation and will be revisited after completing Day 15.
