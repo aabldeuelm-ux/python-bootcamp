@@ -739,3 +739,114 @@ Combining functions with loops allows programs to become cleaner, reusable, and 
 🤖 Successfully completed all Reeborg's World hurdle challenges and understood how functions simplify repeated tasks.
 
 📝 The advanced maze debugging section was intentionally skipped based on the instructor's recommendation and will be revisited after completing Day 15.
+
+# Mission 1 – Day 7
+
+## Topics Learned
+
+- Function Parameters
+- Arguments
+- Positional Arguments
+- Keyword Arguments
+- Functions with Inputs
+- Functions with Multiple Parameters
+
+---
+
+## Function Parameters
+
+Parameters are variables defined in a function that receive values when the function is called.
+
+Example:
+
+def greet(name):
+    print(f"Hello {name}")
+
+---
+
+## Arguments
+
+Arguments are the actual values passed to a function.
+
+Example:
+
+greet("Aleem")
+
+Here, "Aleem" is the argument.
+
+---
+
+## Multiple Parameters
+
+A function can accept more than one parameter.
+
+Example:
+
+def greet(name, location):
+    print(f"Hello {name}")
+    print(f"You are from {location}")
+
+---
+
+## Positional Arguments
+
+Values are assigned according to their position.
+
+Example:
+
+greet("Aleem", "Bangalore")
+
+The first argument goes to the first parameter.
+
+---
+
+## Keyword Arguments
+
+Arguments can also be passed using parameter names.
+
+Example:
+
+greet(location="Bangalore", name="Aleem")
+
+This improves readability and removes the dependency on order.
+
+---
+
+## Things I Learned
+
+- Parameters act as placeholders.
+- Arguments are actual values.
+- A function can take multiple inputs.
+- Positional arguments depend on order.
+- Keyword arguments improve readability.
+- Functions become more flexible when they accept inputs.
+
+---
+
+## Programs Built
+
+- Greeting Function
+- Paint Area Calculator
+- Prime Number Checker
+- Caesar Cipher
+
+---
+
+## Things to Remember
+
+- Parameters are defined inside the function.
+- Arguments are passed while calling the function.
+- Use keyword arguments when readability is important.
+- Break larger programs into smaller reusable functions.
+
+---
+
+## Questions
+
+(Leave this section blank and add any doubts while studying.)
+
+---
+
+## Biggest Lesson
+
+Functions become much more powerful when they can accept different inputs instead of always performing the same task.
